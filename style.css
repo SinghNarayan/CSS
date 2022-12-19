@@ -1,0 +1,134 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-size: 16px;
+}
+.parent_template {
+    width: 100%;
+    height: auto;
+    padding: 4px 4px 0px;
+    margin: 0 !important;
+    overflow-x: hidden;
+    background-color: #f7692c;
+}
+
+.navbar {
+    display: flex;
+    justify-content: left;
+    align-items: flex-start;
+    z-index: 1;
+}
+.navbar ul{
+    margin: 0;
+    list-style: none;
+    display: flex;
+    flex-direction: row;
+    /* justify-content: space-between; */
+    padding: 0;
+}
+ .navbar ul li a{
+    padding: 10px 20px;
+    color: white;
+    background-color: #f7692c;
+    /* border: 1px solid white; */
+    text-decoration: none;
+ }
+ .template_body{
+    margin-top: 4px ;
+    padding: 10px 0;
+    display: flex;
+    height: auto;
+    justify-content: center;
+    align-items: center;
+    /* border: 2px solid rgba(0, 0, 0, 0.867); */
+    flex-direction: column;
+ }
+ .template_rightImage{
+    flex-direction: row;
+    background-color: white;
+    margin: 0;
+    padding: 0 20px;
+    color: black;
+    /* border: 0px; */
+    display: inline-block;
+ }
+ .template_rightImage .content{
+    padding: 4px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+ }
+.content .text_div {
+    width: 700px;
+    padding: 4px;
+}
+.content .image_div {
+    width: 300px;
+    padding: 4px;
+}
+ .template_body a{
+    background-color: black;
+    padding: 10px 20px;
+    text-decoration: none;
+    /* border: 1px solid black; */
+ }
+ .template_body h1{
+    font-size: 26px;
+ }
+ .image_div img{
+    height: 300px;
+    width: 300px;
+ }
+
+.heading p{
+    font-size: 18px;
+    font-weight: 500;
+    overflow-wrap: break-word;
+    hyphens: manual;
+}
+.body_text p{
+    font-size: 18px;
+    font-weight: normal;
+    overflow-wrap: break-word;
+    hyphens: manual;
+}
+.grey-background{
+    background-color: #f2eaea;
+}
+.template_footer ,.template_quote{
+    background-color: white;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    height: 100px;
+    flex-direction: column;
+}
+.template_quote{
+    background-color: #f7692c;
+}
+.template_quote p{
+    font-size: 18px;
+    color: white;
+}
+.template_footer i{
+    margin: 2px 4px;
+}
+.template_footer .footer_text{
+    /* color: white; */
+}
+
+@media (max-width: 767px) {
+    .template_rightImage .content{
+        flex-direction: column;
+    }
+    .content .text_div {
+        width: auto;
+    }
+    .content .image_div {
+        width: auto;
+    }
+    .image_div img{
+        height: 300px;
+        width: 300px;
+     }
+}
